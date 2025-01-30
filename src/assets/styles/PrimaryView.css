@@ -1,0 +1,32 @@
+.created-by__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card-container__image {
+    width: 150px;
+    height: 150px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-container__button {
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.button-container__button--play {
+    background-color: rgb(126, 18, 18);
+}
+.button-container__button--tutorial {
+    background-color: rgb(19, 19, 136);
+}
