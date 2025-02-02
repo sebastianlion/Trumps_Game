@@ -2,3 +2,17 @@
     display: flex;
     flex-direction: column;
 }
+
+.setting-button-container__button  {
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+
+}
+.setting-button-container--play {
+    background-color: rgb(234, 79, 79);
+}
+
+.setting-button-container--tutorial {
+background-color: rgb(60, 60, 60);
+}

@@ -9,9 +9,15 @@ export const Settings = ({ setData, setIsPlaying }) => {
 
   function handleSubmit(e) {
     e.preventDefault();
-    const numberOfPlayers = parseInt(document.getElementById("number-of-players").value, 10);
+    const numberOfPlayers = parseInt(
+      document.getElementById("number-of-players").value,
+      10
+    );
     const orderOfPlay = e.target.elements["radio-buttons-order"].value;
-    const roundsToPlay = parseInt(e.target.elements["radio-buttons-rounds"].value, 10);
+    const roundsToPlay = parseInt(
+      e.target.elements["radio-buttons-rounds"].value,
+      10
+    );
 
     const formData = {
       //   numberOfPlayersRef: parseInt(numberOfPlayersRef.current.value),
@@ -86,8 +92,21 @@ export const Settings = ({ setData, setIsPlaying }) => {
       </label>
 
       <div className="setting-button-container">
-        <button type="submit">Start</button>
-        <button type="button" onClick={() => {setIsPlaying(false)}}>Cancel</button>
+        <button
+          className="setting-button-container__button setting-button-container--play"
+          type="submit"
+        >
+          Start
+        </button>
+        <button
+          className="setting-button-container__button setting-button-container--Tutorial"
+          type="button"
+          onClick={() => {
+            setIsPlaying(false);
+          }}
+        >
+          Cancel
+        </button>
       </div>
     </form>
   );
