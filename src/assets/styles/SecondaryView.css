@@ -1,0 +1,28 @@
+.game-table {
+    border-collapse: collapse;
+    border: 1px solid black
+}
+
+.game-table__header {
+    background-color: #f2f2f2;
+}
+
+.game-table__header, .game-table__cell {
+    border: 1px solid black;   
+    padding: 8px;
+    text-align: left;
+    color: black;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.game-table__icon {
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+}
+
+.game-table__span {
+    display: flex;
+    align-items: center;
+}
